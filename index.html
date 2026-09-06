@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+    rel="stylesheet">
+  <link rel="icon" href="resources/favicon.ico" type="image/x-icon" sizes="96x96" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+  <title>Business Blog Card | devChallenges.io</title>
+
+  <style>
+    :root {
+      font-size: 16px;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: "Lato", sans-serif;
+      font-size: 1rem;
+      height: 100vh;
+    }
+
+    .author-info {
+      font-size: 14px;
+      text-align: center;
+      margin-top: 16px;
+      color: rgb(55, 65, 81);
+    }
+
+    .author-info a {
+      color: rgb(55, 65, 81);
+      text-decoration: underline;
+    }
+
+    #ancestor {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    #container {
+      max-width: 418px;
+      border-radius: 12px;
+      box-shadow: 5px 5px 30px 1px rgba(204, 204, 204, 0.5);
+    }
+
+    .img-wrapper {
+      position: relative;
+      width: 100%;
+      overflow: hidden;
+      border-top-left-radius: 12px;
+      border-top-right-radius: 12px;
+    }
+
+    #hero {
+      display: block;
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+
+    .wave {
+      position: absolute;
+      bottom: -5px;
+      left: 0;
+      width: 100%;
+      
+    }
+
+    .details {
+      padding: 25px 40px;
+    }
+
+    .details>h1 {
+      font-family: "Poppins", sans-serif;
+      font-size: 1.5rem;
+      font-weight: 500;
+
+    }
+
+    .details>p {
+      margin-top: 20px;
+      color: #4A5567;
+      line-height: 1.5;
+      word-spacing: 1px;
+    }
+
+    #profile-container {
+      border-top: 2px solid #F2F5F9;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100px;
+      gap: 20px;
+      overflow: hidden;
+    }
+
+    #profile {
+      width:50px;
+      height: 50px;
+      border-radius: 50%;
+    }
+
+    .about-amy {
+      line-height: 1.3;
+    }
+
+    .about-amy>span {
+      font-size: 1.1rem;
+      font-weight: 700;
+    }
+
+    .about-amy>p {
+      color: #4A5567;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="ancestor">
+    <div id="container">
+      <main id="hero-container">
+        <div class="img-wrapper">
+          <img id="hero" src="resources/hero-image-1.jpg" alt="">
+          <svg class="wave" viewBox="0 0 500 150" preserveAspectRatio="none" fill="#ffffff">
+            <path d="M0, 80, C150,140 350,20 500,80 L500,150 L0,150 Z"></path>
+          </svg>
+        </div>
+        <section class="details">
+          <h1>Perfect solution for small business</h1>
+          <p>Small businesses need to generate leads to grow. You can use tools like Ringy.</p>
+        </section>
+      </main>
+
+
+      <footer id="profile-container">
+        <img id="profile" src="/resources/avatar-image-business-card-1.png" alt="">
+        <div class="about-amy">
+          <span>Amy Burgess</span>
+          <p>Customer Manger, Solution Oy</p>
+        </div>
+      </footer>
+    </div>
+  </div>
+  <div class="author-info">
+    Coded by <a href="#">Your Name Here</a> | Challenge by
+    <a href="https://www.devchallenges.io?ref=challenge" target="_blank">devChallenges.io</a>.
+  </div>
+</body>
+
+</html>
